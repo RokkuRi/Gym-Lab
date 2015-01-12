@@ -1,5 +1,5 @@
 # The Gym
-___
+______
 
 This is a directory I use for *experimentation* and *training*. All in order
 to sharpen my skills and learn new stuff. Something I find
@@ -15,6 +15,7 @@ Below is the (current) list of technologies I am learning at the moment:
 6. Rails
 7. Ruby
 8. SQL
+9. Vim
 
 This list does not encompass all of the technology I would like to get
 familiar with in the long term, but is something I feel comfortable
