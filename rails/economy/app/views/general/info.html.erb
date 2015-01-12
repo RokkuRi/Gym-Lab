@@ -1,0 +1,35 @@
+<h1>General info about the "Economy" application.</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Prefix</th>
+      <th>Verb</th>
+      <th>URI Pattern</th>
+      <th>Controller#Action</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><%= link_to('Root', root_path) %></td>
+      <td>GET</td>
+      <td>/</td>
+      <td>application#info</td>
+    </tr>
+
+    <tr>
+      <td><%= link_to('Products', products_path) %></td>
+      <td>GET</td>
+      <td>/products(.:format)</td>
+      <td>products#index</td>
+    </tr>
+
+    <tr>
+      <td><%= link_to('New Product', new_product_path) %></td>
+      <td>GET</td>
+      <td>/products/new</td>
+      <td>products#new</td>
+    </tr>
+  </tbody>
+</table>

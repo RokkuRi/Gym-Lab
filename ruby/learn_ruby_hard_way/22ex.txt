@@ -1,0 +1,38 @@
+1. def
+2. end
+3. *
+4. /
+5. +
+6. -
+8. _
+8. return
+9. (
+10. )
+11. ,
+12. =
+13. #
+14. {
+15. }
+16. "
+17. '
+18. """ or '''
+19. ?
+20. \
+21. \n
+22. \t
+23. .
+24. [
+25. ]
+26. p
+26. puts
+27. File.open
+28. file.seek
+29. file.close
+30. file.truncate
+31. File.open(file_name, 'w')
+32. File.open(file_name, 'r')
+33. $
+34. \b >> backspace
+35. % >> string interpolation 2nd way
+36. \s >> space
+37. \r >> carriage return

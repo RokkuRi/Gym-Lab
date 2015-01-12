@@ -1,0 +1,38 @@
+<% if flash[:notification] %>
+  <p><%= flash[:notification] %></p>
+<% end %>
+
+<h1>Product</h1>
+
+  <hr>  
+
+<%= form_for(@product) do |product| %>
+  <%= product.label(:name, "Name:") %>
+  <%= product.text_field(:name) %> <br>
+
+  <%= product.label(:name_confirmation, "Confirm name:") %>
+  <%= product.text_field(:name_confirmation) %> <br>
+
+  <%= product.label(:price, "Price:") %>
+  <%= product.text_field(:price) %> <br>
+
+  <%= product.label(:in_store, "Is this product in store?") %>
+  <%= product.check_box(:in_store) %> <br>
+
+  <%= product.label(:terms_of_service, "My terms:") %>
+  <%= product.check_box(:terms_of_service) %> <br>
+
+  <hr>
+
+  <%= product.fields_for(@supplier) do |supplier_form| %>
+    <%= supplier_form.label(:name, "Supplier name:") %>
+    <%= supplier_form.text_field(:name) %> <br>
+
+    <%= supplier_form.label(:country, "Supplier country:") %>
+    <%= supplier_form.text_field(:country) %> <br>
+  <% end %>
+
+  <hr>
+
+  <%= product.submit('Submit it') %>
+<% end %>
